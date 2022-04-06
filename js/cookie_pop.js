@@ -26,9 +26,11 @@ btnView.addEventListener('click',function(e){
 //팝업 닫기 이벤트
 btnClose.addEventListener('click',function(e){
   e.preventDefault();
-  let isChecked = popup.querySelector('#ck').checked; //체크박스에 체크되어있을때 
+  let isChecked = popup.querySelector('#ck').checked; //하루안보기 체크박스에 체크되어있을때 
+  let isChecked02 = popup.querySelector('#ck02').checked;
   if(isChecked) setCookie('today','done',1); //체크박스에 체크 되어있을때 setCookie 함수 가 1로 변환
-
+  if(isChecked02) setCookie('today','done',7);
+  console.log(isChecked02);
     //팝업닫기 
     new Anim(popup,{
       prop : 'opacity',
