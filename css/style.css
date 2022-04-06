@@ -46,7 +46,7 @@ a {
   transform: translate(-50%, -50%);
   border-radius: 15px;
   box-shadow: 10px 10px 30px rgba(144, 238, 144, 0.5);
-  display: none;
+  display: block;
 }
 #popup .content {
   width: 100%;
